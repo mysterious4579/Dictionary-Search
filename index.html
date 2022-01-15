@@ -49,7 +49,7 @@ The use of heading tags, colored text, a background color or picture, a link out
             	document.getElementById('worddefinition').innerHTML = "Word/Definition not found.";
             }
             
-          	var split_body = request_body.split('"');
+            var split_body = request_body.split('"');
             var Output = "<b><p>Definitions:</p></b>";// p tag inside a p tag whatever, it works. idk if its bad practice or not.
             var DefinitionCount = 1;
             for (let index = 0; index < split_body.length; ++index) {
