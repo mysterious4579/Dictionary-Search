@@ -43,7 +43,7 @@ The use of heading tags, colored text, a background color or picture, a link out
           }
           
           function Define() {//regex : \"definition\":\"[^,]*\",\"example
-          	document.getElementById('worddefinition').innerHTML = "Uh oh, Somethings wrong..."; // this'll appear if something i didnt write the code to handle happens or if theres nothing in the input box
+            document.getElementById('worddefinition').innerHTML = "Uh oh, Somethings wrong..."; // this'll appear if something i didnt write the code to handle happens or if theres nothing in the input box
             var request_body = httpGet("https://api.dictionaryapi.dev/api/v2/entries/en/" + document.getElementById('inputbox').value);
             if (request_body.includes("\"No definitions found\"")) {
             	document.getElementById('worddefinition').innerHTML = "Word/Definition not found.";
